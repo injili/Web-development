@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Calc.
+        </title>
+        <meta charset="utf-8">
+        <link href="" type="" rel="">
+    </head>
+    <body>
+        <h1>My Calculator</h1>
+        <div class="container">
+            <div class="intro">
+                <p>
+                    You will input two numbers that
+                     you wish to find the sum, difference, 
+                     product, division and modulus of.
+                </p>
+            </div>
+            <div class="listform">
+              <table>
+                  <tr>
+                      <td>First Number</td>
+                      <td><input type="number" placeholder="First no. goes here" id="n1"></td>
+                  </tr>
+                  <tr>
+                      <td>Second Number</td>
+                      <td><input type="number" placeholder="Second no. goes here" id="n2"></td>
+                  </tr>
+                  <tr>
+                      <td>
+                        <input type="button" value="Compute" onclick="myfunction()">
+                      </td>
+                  </tr>
+              </table>
+              <script type="text/javascript">
+                  function myfunction(){
+                      alert("Would you like to compute these numbers?");
+                      var numberone=document.getElementById("n1").value;
+                      var numbertwo=document.getElementById("n2").value;
+                      var sum=parseInt(numberone)+parseInt(numbertwo);
+                      var difference=numberone-numbertwo
+                      var product=numberone*numbertwo
+                      var division=numberone/numbertwo
+                      var modulus=numberone%numbertwo
+                      document.writeln("<br>The sum of the numbers is "+sum);
+                      document.writeln("<br>The differnce of the numbers is "+difference);
+                      document.writeln("<br>The product of the numbers is "+product);
+                      document.writeln("<br>The division of the numbers gives: "+division);
+                      document.writeln("<br>The result of the modulus is "+modulus);            
+                    }
+              </script>
+            </div>
+
+        </div>
+    </body>
+</html>
