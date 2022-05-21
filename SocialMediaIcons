@@ -29,7 +29,7 @@
         place-item: center;
         background: linear-gradient(315deg, #ffffff, #d7e1ec);
         }
-      
+      .wrapper .icon{}
     </style>
   </head>
   <body>
