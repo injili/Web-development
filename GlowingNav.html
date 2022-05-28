@@ -40,6 +40,7 @@
             box-shadow:  0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
             -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
         }
+        /*the nth-child specification is for specifying a child element nested in a parent element*/
         a:nth-child(1){
             filter: hue-rotate(270deg);
         }
@@ -58,6 +59,7 @@
             background: linear-gradient(90deg, transparent, #03e9f4);
             animation: animate1 1s linear infinite;
         }
+        /*@keyframes is used to design an animation with 0% for "from" and 100% for "to"*/
         @keyframes animate1{
             0%{
                 left: -100%;
@@ -108,6 +110,7 @@
             width: 2px;
             height: 100%;
             background: linear-gradient(360deg, transparent, #03e9f4);
+            /*the animation created initially is called below*/
             animation: animate4 1s linear infinite;
             animation-delay: 0.75s;
         }
